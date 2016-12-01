@@ -32,7 +32,7 @@ print(kcdata.fetchValues(key: "name")) // names
 [Doc](https://realm.io/news/nspredicate-cheatsheet/)
 
 ```Swift
-items = kcdata.sortFetch(predicate: "name CONTAINS[c] 'al'", ascending: nil, sortKey: nil)
+items = kcdata.sortFetch(predicate: "name CONTAINS[c] 'al'", ascending: nil, key: nil)
         
         for itm in items {
             print(itm.value(forKey: "name")!)
@@ -42,7 +42,7 @@ items = kcdata.sortFetch(predicate: "name CONTAINS[c] 'al'", ascending: nil, sor
 - Update value Core Data database
 
 ```Swift
-   kcdata.update(predicate: "name == 'defne'", value: "mahmut" as AnyObject, for: "name")
+   kcdata.update(predicate: "name == 'defne'", value: "mahmut" as AnyObject, key: "name")
 ```
 
 - Delete value Core Data database
