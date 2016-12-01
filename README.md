@@ -25,7 +25,7 @@ var items = [NSManagedObject]()
 ```
 
 ```Swift
-print(kcdata.fetchValues(name: "name")) // names
+print(kcdata.fetchValues(key: "name")) // names
 ```
 - Fetch with predicate
 
