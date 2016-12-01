@@ -29,7 +29,7 @@ print(kcdata.fetchValues(key: "name")) // names
 ```
 - Fetch with predicate
 
-[Doc](https://realm.io/news/nspredicate-cheatsheet/)
+- [Doc predicate](https://realm.io/news/nspredicate-cheatsheet/)
 
 ```Swift
 items = kcdata.sortFetch(predicate: "name CONTAINS[c] 'al'", ascending: nil, key: nil)
